@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danna Pycher | Hypnotherapy & Transformational Coaching</title>
+    <meta name="description" content="Transform your life with expert hypnotherapy and coaching. Break through limitations and create lasting change.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          sage: {
+            50:  '#fdecec',
+            100: '#f8d1d2',
+            200: '#f0a7a9',
+            300: '#e67a7e',
+            400: '#d94f54',
+            500: '#b02326', // BASE BRAND COLOR
+            600: '#9a1f22',
+            700: '#7f191c',
+            800: '#651416',
+            900: '#4f0f11',
+          },
+          cream: {
+            50: '#fdfcfb',
+            100: '#f7f5f2',
+            200: '#ede9e3',
+          },
+          terracotta: {
+            500: '#c67c5c',
+            600: '#b86a4a',
+          }
+        },
+        fontFamily: {
+          serif: ['Playfair Display', 'serif'],
+          sans: ['Inter', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      rgba(176, 35, 38, 0.95) 0%,
+      rgba(79, 15, 17, 0.90) 100%
+    );
+  }
+
+  .fade-in {
+    animation: fadeIn 0.8s ease-in forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
+  .slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  @keyframes slideUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+</style>
+</head>
+<body class="bg-cream-50 text-sage-800 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#hero" class="font-serif text-2xl font-semibold text-white tracking-tight hover:text-terracotta-600 transition-all duration-200">
+                        Danna Pycher
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-white hover:text-terracotta-600 transition-colors duration-200 font-medium text-sm tracking-wide">About</a>
+                    <a href="#services" class="text-white hover:text-terracotta-600 transition-colors duration-200 font-medium text-sm tracking-wide">Services</a>
+                    <a href="#testimonials" class="text-white hover:text-terracotta-600 transition-colors duration-200 font-medium text-sm tracking-wide">Stories</a>
+                    <a href="https://www.dannapycher.com/copy-2-of-tedx-videos" target="_blank" class="text-white hover:text-terracotta-600 transition-colors duration-200 font-medium text-sm tracking-wide">Blog</a>
+                    <a href="#newsletter" class="text-white hover:text-terracotta-600 transition-colors duration-200 font-medium text-sm tracking-wide">Subscribe</a>
+                    <a href="#book" class="bg-sage-600 text-white px-6 py-3 rounded-full hover:bg-sage-700 transition-all duration-200 font-medium text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Book Session
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-sage-800 hover:text-terracotta-600 focus:outline-none transition-colors">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/20 backdrop-blur-md absolute w-full shadow-lg border-t border-sage-100">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#about" class="block px-3 py-4 text-sage-800 hover:text-terracotta-600 hover:bg-sage-50 rounded-md text-base font-medium transition-colors">About</a>
+                <a href="#services" class="block px-3 py-4 text-sage-800 hover:text-terracotta-600 hover:bg-sage-50 rounded-md text-base font-medium transition-colors">Services</a>
+                <a href="#testimonials" class="block px-3 py-4 text-sage-800 hover:text-terracotta-600 hover:bg-sage-50 rounded-md text-base font-medium transition-colors">Stories</a>
+                <a href="https://www.dannapycher.com/copy-2-of-tedx-videos" target="_blank" class="block px-3 py-4 text-sage-800 hover:text-terracotta-600 hover:bg-sage-50 rounded-md text-base font-medium transition-colors">Blog</a>
+                <a href="#newsletter" class="block px-3 py-4 text-sage-800 hover:text-terracotta-600 hover:bg-sage-50 rounded-md text-base font-medium transition-colors">Subscribe</a>
+                <a href="#book" class="block px-3 py-4 text-terracotta-600 font-semibold hover:bg-sage-50 rounded-md transition-colors">Book Session</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+  <!-- Video Background -->
+  <div class="absolute inset-0 -z-10">
+    <div class="absolute inset-0 overflow-hidden">
+      <iframe
+  id="heroVideo"
+  class="absolute top-1/2 left-1/2
+         -translate-x-1/2 -translate-y-1/2
+         w-[150%] h-[150%]
+         md:w-[135%] md:h-[135%]
+         lg:w-[125%] lg:h-[125%]
+         xl:w-[118%] xl:h-[118%]
+         pointer-events-none"
+  src="https://www.youtube.com/embed/erpPQDSWD0k?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&playsinline=1&loop=1&playlist=erpPQDSWD0k&start=180&end=256&enablejsapi=1"
+  title="Background video"
+  frameborder="0"
+  allow="autoplay; encrypted-media; picture-in-picture"
+  allowfullscreen
+></iframe>
+    </div>
+
+    <!-- Overlays -->
+    <div class="absolute inset-0 bg-sage-900/20"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-sage-900/30 via-sage-900/20 to-sage-900/40"></div>
+  </div>
+
+  <!-- 🔊 Sound Toggle (BOTTOM-LEFT) -->
+  <button
+    id="heroSoundToggle"
+    type="button"
+    class="fixed bottom-5 left-5 z-50
+           inline-flex items-center gap-2
+           rounded-full px-4 py-3
+           bg-black/40 hover:bg-black/50
+           border border-white/20
+           text-white text-sm
+           backdrop-blur-md
+           shadow-lg transition
+           opacity-0 pointer-events-none"
+    aria-pressed="false"
+    aria-label="Turn sound on"
+  >
+    <span id="heroSoundIcon">🔇</span>
+    <span id="heroSoundText">Sound off</span>
+  </button>
+
+  <!-- Content -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div class="grid grid-cols-1 items-center">
+      <div class="space-y-8 slide-up max-w-2xl" style="animation-delay: 0.1s;">
+        <div class="inline-block">
+          <span class="text-cream-200 font-semibold tracking-wider uppercase text-xs mb-4 block">
+            Transformational Hypnotherapy
+          </span>
+        </div>
+
+        <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-medium text-cream-50 leading-tight text-balance">
+          Rewrite Your <br />
+          <span class="italic text-cream-100/90">Inner</span> Narrative
+        </h1>
+
+        <p class="text-lg md:text-xl text-cream-100/80 leading-relaxed max-w-lg text-balance font-light">
+          Break through limiting beliefs, heal past trauma, and step into your most empowered self through the profound power of your subconscious mind.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+          <a
+            href="https://go.dannapycher.com/courses" target="_blank"
+            class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full text-white bg-sage-700 hover:bg-sage-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+          >
+            View Healing Courses
+            <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+          </a>
+          <a
+            href="#about"
+            class="inline-flex items-center justify-center px-8 py-4 border-2 border-cream-100/40 text-base font-medium rounded-full text-cream-50 bg-transparent hover:bg-cream-50/10 transition-all duration-200"
+          >
+            Learn More
+          </a>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="pt-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 text-sm text-cream-100/75">
+          <div class="flex items-center gap-2">
+            <i data-lucide="award" class="w-4 h-4 text-terracotta-300"></i>
+            <span>Certified Clinical Hypnotherapist</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="globe" class="w-4 h-4 text-terracotta-300"></i>
+            <span>International Speaker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Load YouTube IFrame API (required to mute/unmute reliably)
+  (function loadYT() {
+    if (window.YT && window.YT.Player) return;
+    if (document.querySelector('script[data-yt-api="true"]')) return;
+    const tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    tag.async = true;
+    tag.dataset.ytApi = "true";
+    document.head.appendChild(tag);
+  })();
+
+  let heroPlayer = null;
+  let isSoundOn = false;
+
+  const heroSection = document.getElementById("hero");
+  const btn = document.getElementById("heroSoundToggle");
+  const icon = document.getElementById("heroSoundIcon");
+  const text = document.getElementById("heroSoundText");
+
+  function setButtonVisible(visible) {
+    if (visible) {
+      btn.classList.remove("opacity-0", "pointer-events-none");
+      btn.classList.add("opacity-100");
+    } else {
+      btn.classList.add("opacity-0", "pointer-events-none");
+      btn.classList.remove("opacity-100");
+    }
+  }
+
+  function forceMuteAndResetUI() {
+    if (!heroPlayer) return;
+    heroPlayer.mute();
+    isSoundOn = false;
+    icon.textContent = "🔇";
+    text.textContent = "Sound off";
+    btn.setAttribute("aria-pressed", "false");
+    btn.setAttribute("aria-label", "Turn sound on");
+  }
+
+  window.onYouTubeIframeAPIReady = function () {
+    heroPlayer = new YT.Player("heroVideo", {
+      events: {
+        onReady: (e) => {
+          // Autoplay works reliably only when muted
+          e.target.mute();
+          e.target.playVideo();
+        }
+      }
+    });
+
+    // Show/hide button + auto-mute when leaving hero
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        const inHero = entry.isIntersecting && entry.intersectionRatio >= 0.25;
+
+        setButtonVisible(inHero);
+
+        if (!inHero) {
+          forceMuteAndResetUI();
+        }
+      },
+      { threshold: [0, 0.25, 1] }
+    );
+
+    observer.observe(heroSection);
+  };
+
+  // Toggle sound manually (only meaningful while in hero)
+  btn.addEventListener("click", () => {
+    if (!heroPlayer) return;
+
+    isSoundOn = !isSoundOn;
+
+    if (isSoundOn) {
+      heroPlayer.unMute();
+      heroPlayer.setVolume(100);
+      icon.textContent = "🔊";
+      text.textContent = "Sound on";
+      btn.setAttribute("aria-pressed", "true");
+      btn.setAttribute("aria-label", "Turn sound off");
+    } else {
+      forceMuteAndResetUI();
+    }
+  });
+
+  // Start with button hidden until observer confirms hero is in view
+  setButtonVisible(false);
+</script>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Image Grid -->
+                <div class="relative order-2 lg:order-1">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4 mt-8">
+                            <div class="aspect-[3/4] rounded-lg overflow-hidden shadow-md">
+                                <img src="http://static.photos/studio/400x500/2" alt="Therapy session" class="object-cover w-full h-full hover:scale-110 transition-transform duration-500">
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="aspect-[3/4] rounded-lg overflow-hidden shadow-md">
+                                <img src="http://static.photos/wellness/400x500/3" alt="Meditation practice" class="object-cover w-full h-full hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="bg-sage-100 p-6 rounded-lg shadow-md flex flex-col justify-center aspect-square">
+                                <span class="font-serif text-3xl text-sage-700 font-bold">10+</span>
+                                <span class="text-sage-600 text-sm mt-1">Years of Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div class="order-1 lg:order-2 space-y-6">
+                    <span class="text-terracotta-600 font-semibold tracking-wider uppercase text-xs">About Danna</span>
+                    <h2 class="font-serif text-4xl md:text-5xl text-sage-900 font-medium leading-tight">
+                        Guiding You Back <br/>to Your Truth
+                    </h2>
+                    <div class="prose prose-sage text-sage-600 space-y-4">
+                        <p class="text-lg leading-relaxed">
+                            After surviving a traumatic car accident at 18, I discovered the profound healing power of the subconscious mind. What began as my own healing journey evolved into a calling to help others break free from their internal prisons.
+                        </p>
+                        <p class="leading-relaxed">
+                            As a certified clinical hypnotherapist and TEDx speaker, I've dedicated over a decade to mastering the art of subconscious transformation. My approach blends clinical hypnotherapy with deep intuitive coaching, creating a safe space for profound breakthroughs.
+                        </p>
+                        <p class="leading-relaxed">
+                            Whether you're struggling with anxiety, limiting beliefs, or simply feeling stuck, my mission is to help you reconnect with your inner wisdom and step into a life of authentic freedom.
+                        </p>
+                    </div>
+                    
+                    <div class="pt-4">
+                        <a href="#book" class="inline-flex items-center text-terracotta-600 font-semibold hover:text-terracotta-700 transition-colors group">
+                            Work With Me
+                            <i data-lucide="arrow-right" class="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-terracotta-600 font-semibold tracking-wider uppercase text-xs mb-4 block">Services</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-sage-900 font-medium mb-6">Transformational Offerings</h2>
+                <p class="text-sage-600 text-lg">Each journey is tailored to your unique needs, combining evidence-based hypnotherapy with compassionate coaching.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-sage-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-terracotta-500 transition-colors duration-300">
+                        <i data-lucide="sparkles" class="w-6 h-6 text-sage-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-sage-900 mb-3">1:1 Hypnotherapy</h3>
+                    <p class="text-sage-600 mb-6 leading-relaxed">Deep subconscious work targeting specific blocks, phobias, anxiety, or limiting beliefs. In-person or virtual sessions available.</p>
+                    <span class="text-sm font-semibold text-terracotta-600">From $297/session</span>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-sage-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-terracotta-500 transition-colors duration-300">
+                        <i data-lucide="users" class="w-6 h-6 text-sage-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-sage-900 mb-3">Intensive Immersion</h3>
+                    <p class="text-sage-600 mb-6 leading-relaxed">A half-day or full-day intensive for rapid transformation. Perfect for those ready to dive deep and create immediate change.</p>
+                    <span class="text-sm font-semibold text-terracotta-600">From $1,500</span>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-sage-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-terracotta-500 transition-colors duration-300">
+                        <i data-lucide="mic" class="w-6 h-6 text-sage-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-sage-900 mb-3">Speaking & Events</h3>
+                    <p class="text-sage-600 mb-6 leading-relaxed">Keynotes and workshops on the power of the subconscious mind, healing trauma, and personal transformation for organizations and retreats.</p>
+                    <span class="text-sm font-semibold text-terracotta-600">Custom Quote</span>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-sage-600 mb-6">Not sure which option is right for you?</p>
+                <a href="https://go.dannapycher.com/courses" target="_blank" class="inline-flex items-center px-6 py-3 border border-sage-300 rounded-full text-sage-700 hover:bg-sage-100 transition-colors">
+                    View All Courses
+                </a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-terracotta-600 font-semibold tracking-wider uppercase text-xs mb-4 block">Testimonials</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-sage-900 font-medium">Stories of Transformation</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-cream-50 p-8 rounded-2xl relative">
+                    <i data-lucide="quote" class="absolute top-6 right-6 w-8 h-8 text-sage-200"></i>
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                    </div>
+                    <p class="text-sage-700 mb-6 italic leading-relaxed">"I came to Danna struggling with severe performance anxiety. After just three sessions, I gave the best presentation of my career. The shift was profound and immediate."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-sage-200 rounded-full flex items-center justify-center text-sage-700 font-semibold text-sm">JM</div>
+                        <div>
+                            <p class="font-semibold text-sage-900">James Mitchell</p>
+                            <p class="text-sm text-sage-500">Executive, Fortune 500</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-cream-50 p-8 rounded-2xl relative">
+                    <i data-lucide="quote" class="absolute top-6 right-6 w-8 h-8 text-sage-200"></i>
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                    </div>
+                    <p class="text-sage-700 mb-6 italic leading-relaxed">"Danna has a gift for creating safety while going exactly where you need to go. She helped me heal childhood trauma I didn't even know was affecting my adult relationships."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-sage-200 rounded-full flex items-center justify-center text-sage-700 font-semibold text-sm">EL</div>
+                        <div>
+                            <p class="font-semibold text-sage-900">Elena Lopez</p>
+                            <p class="text-sm text-sage-500">Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-cream-50 p-8 rounded-2xl relative">
+                    <i data-lucide="quote" class="absolute top-6 right-6 w-8 h-8 text-sage-200"></i>
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-terracotta-500 text-terracotta-500"></i>
+                    </div>
+                    <p class="text-sage-700 mb-6 italic leading-relaxed">"I've tried traditional therapy for years. One intensive day with Danna accomplished what years of talk therapy couldn't. Worth every penny."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-sage-200 rounded-full flex items-center justify-center text-sage-700 font-semibold text-sm">RK</div>
+                        <div>
+                            <p class="font-semibold text-sage-900">Robert Kim</p>
+                            <p class="text-sm text-sage-500">Creative Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Booking Section -->
+    <section id="book" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-sage-800"></div>
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-br from-terracotta-500/30 to-sage-900/30"></div>
+        </div>
+        
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-terracotta-400 font-semibold tracking-wider uppercase text-xs mb-4 block">Begin Today</span>
+            <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-medium mb-6 leading-tight">
+                Ready to Meet Your <br/>Highest Self?
+            </h2>
+            <p class="text-sage-200 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+                Take the first step toward lasting transformation. Schedule your complimentary consultation to explore how we can work together.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="w-full sm:w-auto px-10 py-5 bg-terracotta-500 hover:bg-terracotta-600 text-white rounded-full font-semibold text-lg transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                    Book Free Consultation
+                </button>
+                <button class="w-full sm:w-auto px-10 py-5 bg-transparent border-2 border-sage-400 hover:border-white text-sage-100 hover:text-white rounded-full font-semibold text-lg transition-all duration-200 inline-flex items-center justify-center gap-2">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    Contact Danna
+                </button>
+            </div>
+            
+            <p class="mt-8 text-cream-100 text-sm">Virtual sessions available worldwide</p>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+<section
+  id="newsletter"
+  class="py-24 relative overflow-hidden bg-cream-50"
+>
+  <!-- Subtle background accent -->
+  <div class="absolute inset-0 bg-gradient-to-br from-sage-50 via-cream-50 to-sage-100"></div>
+
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="font-serif text-4xl md:text-5xl text-sage-900 font-medium mb-6">
+      Still not sure?
+    </h2>
+
+    <p class="text-sage-700 text-lg md:text-xl mb-6 leading-relaxed">
+      Please, feel free to enter your name and email to get my
+      <span class="font-semibold">5 STEPS to Manifesting Your Best Reality</span>
+      guide book <span class="font-semibold">FREE</span> and a
+      <span class="font-semibold">20% off coupon</span> to any of my courses!
+    </p>
+
+    <p class="text-sage-600 mb-10 italic">
+      I believe in your transformation, so let’s start today.
+    </p>
+
+    <!-- Form -->
+    <form
+  class="flex flex-col space-y-4 max-w-3xl mx-auto"
+  action="#"
+  method="post"
+>
+  <input
+    type="text"
+    name="first_name"
+    placeholder="First Name"
+    required
+    class="w-full px-5 py-4 rounded-full border border-sage-300
+           focus:outline-none focus:ring-2 focus:ring-sage-500
+           text-sage-800 placeholder-sage-400"
+  />
+
+  <input
+    type="text"
+    name="last_name"
+    placeholder="Last Name"
+    required
+    class="w-full px-5 py-4 rounded-full border border-sage-300
+           focus:outline-none focus:ring-2 focus:ring-sage-500
+           text-sage-800 placeholder-sage-400"
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    required
+    class="w-full px-5 py-4 rounded-full border border-sage-300
+           focus:outline-none focus:ring-2 focus:ring-sage-500
+           text-sage-800 placeholder-sage-400"
+  />
+
+  <button
+    type="submit"
+    class="mt-4 px-10 py-4
+           bg-sage-600 hover:bg-sage-700
+           text-white font-semibold text-lg
+           rounded-full transition-all duration-200
+           shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+  >
+    Subscribe & Get the Free Guide
+  </button>
+</form>
+
+    <p class="mt-6 text-sm text-sage-500">
+      No spam. Unsubscribe anytime.
+    </p>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-sage-900 text-sage-300 py-12 border-t border-sage-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <h3 class="font-serif text-2xl text-white mb-4">Danna Pycher</h3>
+                    <p class="text-sage-400 max-w-sm leading-relaxed mb-6">
+                        Helping individuals worldwide transform their lives through the power of clinical hypnotherapy and subconscious coaching.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-sage-800 flex items-center justify-center hover:bg-terracotta-500 hover:text-white transition-all duration-200">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-sage-800 flex items-center justify-center hover:bg-terracotta-500 hover:text-white transition-all duration-200">
+                            <i data-lucide="youtube" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-sage-800 flex items-center justify-center hover:bg-terracotta-500 hover:text-white transition-all duration-200">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors">Stories</a></li>
+                        <li><a href="https://www.dannapycher.com/copy-2-of-tedx-videos" target="_blank" class="hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <a href="mailto:hello@dannapycher.com" class="hover:text-white transition-colors">hello@dannapycher.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>Miami, FL</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-sage-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-sage-500">&copy; 2024 Danna Pycher. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-sage-500">
+                    <a href="#" class="hover:text-sage-300 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-sage-300 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+        
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+        
+        // Navbar scroll effect
+       const navbar = document.getElementById('navbar');
+
+// Logo, nav links, mobile menu button (exclude CTA button)
+const navTextItems = navbar.querySelectorAll(
+  'a:not(.bg-sage-600), #mobile-menu-btn'
+);
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 50) {
+    // ON SCROLL
+    navbar.classList.add(
+      'bg-white/95',
+      'backdrop-blur-md',
+      'shadow-sm'
+    );
+
+    navTextItems.forEach(item => {
+      item.classList.remove('text-cream-50');
+      item.classList.add('text-sage-500');
+    });
+
+  } else {
+    // TOP / HERO
+    navbar.classList.remove(
+      'bg-white/95',
+      'backdrop-blur-md',
+      'shadow-sm'
+    );
+
+    navTextItems.forEach(item => {
+      item.classList.remove('text-sage-500');
+      item.classList.add('text-cream-50');
+    });
+  }
+});
+        
+        // Smooth scroll polyfill for older browsers
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.slide-up, .fade-in').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
